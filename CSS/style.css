@@ -40,6 +40,7 @@ header {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    z-index: 9999;
 
     position: absolute;
     top: 15px;    
@@ -62,7 +63,7 @@ header {
     }
 
     nav {
-        display: none;
+        display: flex;
         width: 100%;
     }
 
