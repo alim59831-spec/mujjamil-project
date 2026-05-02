@@ -8,7 +8,11 @@
     <title>ABBRANDOOH</title>
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
 
-
+<script>
+function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
 
 </head>
 
@@ -21,7 +25,11 @@
 
 
             </div>
-
+<div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
             <nav id="navMenu">
                 <ul>
 
@@ -223,7 +231,7 @@
 
     </section>
     <section class="contact">
-        <div class="contact-container">
+        
 
             <h2>Contact Us</h2>
 
@@ -254,12 +262,12 @@
                 </div>
 
             </div>
+            
 
-        </div>
+        
+        
     </section>
-
-
-    <footer class="footer">
+ <footer class="footer">
         <div class="footer-content">
             <p>© 2026 Your Company | All Rights Reserved</p>
 
@@ -271,6 +279,8 @@
             </div>
         </div>
     </footer>
+
+   
 </body>
 
 </html>
