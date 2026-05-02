@@ -6,49 +6,27 @@
      <link rel="stylesheet" type="text/css" href="CSS/style.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>AB BRAND OOH</title>
+    <script>
+function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
 </head>
 <body>
- <header>
+<header>
         <div class="container">
             <div class="logo">
-                <img src="IMAGES/abbrandooh.png">
+<img src="IMAGES/abbrandooh.png">
 
 
 
             </div>
-<div class="hamburger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+
             <nav id="navMenu">
                 <ul>
-
-
-                    <li class="nav-item dropdown-parent">
-                        <a href="#">Products ▾</a>
-
-                        <div class="dropdown-menu">
-
-                            <div class="column">
-                                <ul>
-                                    <li><a href="#">UV Printing</a></li>
-                                    <li><a href="#">Acrylic Steel Signage</a></li>
-                                    <li><a href="#">Flanges</a></li>
-                                    <li><a href="#">Way Sign</a></li>
-                                    <li><a href="#">Clippers</a></li>
-                                    <li><a href="#">Gazebo Tents</a></li>
-                                    <li><a href="#">Blowcher Stand</a></li>
-                                </ul>
-                            </div>
-
-                           
-
-
-                        </div>
-                    </li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
+                    <li><a href="product.html">Product</a></li>
                     <li><a href="enquiry.html">Inquiry</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
@@ -66,7 +44,7 @@
 
     <div class="contact-container">
         <div class="contact-image">
-            <img src="contact.jpg" alt="Contact Us"> </div>
+            <img src="IMAGES/contact-img.jpg" alt="Contact Us"> </div>
 
         <div class="contact-grid">
             <div class="info-box black">
@@ -98,22 +76,22 @@
     <div class="message-section">
     <h2>SEND US A MESSAGE</h2>
 
-    <form class="contact-form">
+    <form class="contact-form" id="contact-form">
         <div class="input-row">
             <div class="input-group">
-                <input type="text" id="name" required placeholder="Name *">
+                <input type="text" name="name" required  placeholder="Name *">
             </div>
             <div class="input-group">
-                <input type="tel" id="phone" placeholder="Phone">
+                <input type="tel" name="phone" required  placeholder="Phone">
             </div>
         </div>
 
         <div class="input-row">
-            <input type="email" id="email" required placeholder="E-mail *">
+            <input type="email"  name="email"  required placeholder="E-mail *">
         </div>
 
         <div class="input-row">
-            <textarea id="message" rows="10" placeholder="Describe your project"></textarea>
+            <textarea rows="10" name="description"  placeholder="Describe your project"></textarea>
         </div>
 
         <div class="input-row center-btn">
@@ -148,4 +126,25 @@
         </div>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+  emailjs.init("cY6IVJl7JfdGEE6GP");
+})();
+
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "service_e2i79hr",
+    "template_cstytcj",
+    this
+  ).then(function() {
+    alert("✅ Message sent!");
+  }, function(error) {
+    alert("❌ Error: " + error.text);
+  });
+});
+</script>
 </html>
