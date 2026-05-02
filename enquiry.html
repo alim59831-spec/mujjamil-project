@@ -6,50 +6,28 @@
     <title>AB BRAND OOH</title>
 <script src="https://kit.fontawesome.com/a6fdfb7db7.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="CSS/style.css">
+<script>
+function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
 
 </head>
 <body>
  <header>
         <div class="container">
             <div class="logo">
-                <img src="IMAGES/abbrandooh.png">
+<img src="IMAGES/abbrandooh.png">
 
 
 
             </div>
-<div class="hamburger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+
             <nav id="navMenu">
                 <ul>
-
-
-                    <li class="nav-item dropdown-parent">
-                        <a href="#">Products ▾</a>
-
-                        <div class="dropdown-menu">
-
-                            <div class="column">
-                                <ul>
-                                    <li><a href="#">UV Printing</a></li>
-                                    <li><a href="#">Acrylic Steel Signage</a></li>
-                                    <li><a href="#">Flanges</a></li>
-                                    <li><a href="#">Way Sign</a></li>
-                                    <li><a href="#">Clippers</a></li>
-                                    <li><a href="#">Gazebo Tents</a></li>
-                                    <li><a href="#">Blowcher Stand</a></li>
-                                </ul>
-                            </div>
-
-                           
-
-
-                        </div>
-                    </li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
+                    <li><a href="#">Product</a></li>
                     <li><a href="enquiry.html">Inquiry</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
@@ -67,7 +45,7 @@
 
     <div class="contact-container">
         <div class="contact-image">
-            <img src="contact.jpg" alt="Contact Us"> </div>
+            <img src="IMAGES/contact-img.jpg" alt="Contact Us"> </div>
 
         <div class="contact-grid">
             <div class="info-box black">
@@ -137,4 +115,26 @@
     </footer>   
     
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+  emailjs.init("cY6IVJl7JfdGEE6GP");
+})();
+
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "service_e2i79hr",
+    "template_cstytcj",
+    this
+  ).then(function() {
+    alert("✅ Message sent!");
+  }, function(error) {
+    alert("❌ Error: " + error.text);
+  });
+});
+</script>
 </html>
