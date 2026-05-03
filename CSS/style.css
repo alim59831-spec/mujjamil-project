@@ -8,7 +8,7 @@ body {
 
 /* HEADER */
 header {
-    background: #0c3b53;
+     background: #0c3b53;
     padding: 12px 0;
     position: sticky;
     top: 0;
@@ -27,8 +27,7 @@ header {
 
 /* LOGO */
 .logo img {
-    height: 45px;
-    width: auto;
+     height: 45px;
     display: block;
 }
 
@@ -86,7 +85,7 @@ nav ul li a:hover {
 
 /* HAMBURGER */
 .hamburger {
-    display: none;
+     display: none;
     flex-direction: column;
     cursor: pointer;
 }
@@ -98,12 +97,21 @@ nav ul li a:hover {
     margin: 4px 0;
 }
 
-/* MOBILE */
 @media (max-width: 768px) {
-    .hamburger {
-        display: flex;
+
+    .container {
+        justify-content: space-between;
     }
 
+    /* show hamburger */
+    .hamburger {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 18px;
+    }
+
+    /* nav hidden by default */
     nav {
         display: none;
         width: 100%;
@@ -117,10 +125,10 @@ nav ul li a:hover {
         flex-direction: column;
         background: #0c3b53;
         padding: 15px 0;
+        text-align: center;
     }
 
     nav ul li {
-        text-align: center;
         margin: 10px 0;
     }
 }
