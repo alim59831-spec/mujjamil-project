@@ -456,35 +456,59 @@ button:hover {
     }
 }
 
-.quality-section {
 
-    
-    padding: 50px 20px;
+
+.clients-section {
+    padding: 60px 20px;
     text-align: center;
-    margin: 0px;
-    background-image: url("../IMAGES/SECTION-IMAGE.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-
+    background: #0c3b53;
+    color: #fff;
 }
 
-.quality-section h3 {
+.clients-section h2 {
+    margin-bottom: 30px;
+}
 
-    font-size: 30px;
-    color: #222;
-    line-height: 1.5;
-    letter-spacing: 1px;
-    max-width: 700px;
-    margin: auto;
-    text-transform: capitalize;
+/* SLIDER */
+.clients-slider {
+    overflow: hidden;
+    width: 100%;
+}
+
+.clients-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 12s linear infinite;
+}
+
+.client {
+    min-width: 200px;
+    margin: 0 20px;
+    padding: 20px;
+    background: #ffffff;
+    color: #000;
+    border-radius: 10px;
     font-weight: 600;
-    letter-spacing: 1px;
-
-
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
+/* ANIMATION */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .client {
+        min-width: 150px;
+        font-size: 14px;
+    }
+}
 .ourproject {
     background: #000;
     color: #fff;
