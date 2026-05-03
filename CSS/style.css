@@ -574,7 +574,7 @@ button:hover {
 .gallery {
     text-align: center;
     padding: 40px 10px;
-    background: rgba(230, 21, 55, 0.815);
+    background: #0c3b53;
 }
 
 .gallery h2 {
@@ -698,7 +698,7 @@ button:hover {
 }
 
 .contact {
-    background: #0468eb;
+    background: #0c3b53;
     padding: 50px 10px;
     margin: 0;
 
