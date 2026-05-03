@@ -177,6 +177,9 @@ nav ul li a:hover {
     animation: scroll 8s linear infinite; /* slightly faster for mobile */
   }
 }
+.marquee:hover .track {
+  animation-play-state: paused;
+}
 /*MARQUE END */
 .section-1 {
     margin: 0px;
