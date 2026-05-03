@@ -135,7 +135,49 @@ nav ul li a:hover {
         margin: 10px 0;
     }
 }
+/*MARQUES START */
+.brand-marquee {
+    width: 100%;
+    overflow: hidden;
+    background: #0c3b53;
+    padding: 15px 0;
+}
 
+.marquee-content {
+    display: flex;
+    width: max-content;
+    animation: scroll 12s linear infinite;
+}
+
+.marquee-content span {
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    margin-right: 50px;
+    letter-spacing: 3px;
+    white-space: nowrap;
+}
+
+/* Animation */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+.marquee-content span {
+    color: #00bcd4;
+    text-shadow: 0 0 10px rgba(0,188,212,0.7);
+}
+@media (max-width: 768px) {
+    .marquee-content span {
+        font-size: 18px;
+        margin-right: 30px;
+    }
+}
+/*MARQUE END */
 .section-1 {
     margin: 0px;
     background-image: url("../IMAGES/SECTION-IMAGE.png");
