@@ -10,7 +10,7 @@ body {
 
 /* HEADER */
 header {
-     background: #0c3b53;
+     background:  #000;
     padding: 12px 0;
     position: sticky;
     top: 0;
@@ -152,7 +152,7 @@ nav ul li a:hover {
 .track span {
   font-size: 26px;
   font-weight: 600;
-  color: #00bcd4;
+  color: white;
   white-space: nowrap;
   margin-right: 40px;
   letter-spacing: 2px;
