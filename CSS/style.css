@@ -421,18 +421,18 @@ button:hover {
 }
 
 .box {
-    padding: 20px;
+    padding: 10px;
 }
 
 .box i {
     font-size: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: #ffffff;
 }
 
 .box h3 {
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .box p {
@@ -579,6 +579,7 @@ button:hover {
 
 .gallery h2 {
     margin-bottom: 20px;
+    color:white;
 }
 
 /* Remove space between inline-block items */
@@ -710,7 +711,7 @@ button:hover {
 .contact h2 {
     font-size: 32px;
     margin-bottom: 30px;
-    color: #333;
+    color: white;
     text-align: center;
 }
 
