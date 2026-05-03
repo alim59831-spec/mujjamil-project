@@ -3,7 +3,9 @@ body {
     font-family: 'Poppins', sans-serif;
 
     overflow-x: hidden;
-
+    width: 100%;
+ box-sizing: border-box;
+    max-width: 100%;
 }
 
 /* HEADER */
@@ -562,7 +564,9 @@ button:hover {
 }
 
 .testimonial-section {
-    overflow: hidden;
+    display: flex;
+    width: 100%;
+    min-height: 400px;
 }
 
 
@@ -593,6 +597,30 @@ button:hover {
     position: relative;
     overflow: hidden;
     height: 400px;
+     background: #111;
+    
+
+}
+
+@media (max-width: 768px) {
+    .testimonial-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .testimonial-left,
+    .testimonial-right {
+        width: 100%;
+        height: auto;
+    }
+
+    .testimonial-left {
+        height: 250px; /* optional image height */
+    }
+
+    .testimonial-right {
+        padding: 30px 20px;
+    }
 }
 
 .contact {
