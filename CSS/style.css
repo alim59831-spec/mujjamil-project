@@ -723,8 +723,9 @@ button:hover {
     border-top: 2px solid #cceeff;
     border-bottom: 2px solid #cceeff;
     display: inline-block;
-    padding: 15px 150px;
+   
     margin-bottom: 20px;
+    padding: 10px 20px;
 }
 
 h1 {
@@ -744,11 +745,15 @@ h1 {
     max-width: 1000px;
     margin: 10px auto;
     color: #777;
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
     word-spacing: 4px;
     letter-spacing: 2px;
-    white-space: nowrap;
+    white-space: normal;
+    line-height: 1.5;
+   
+        padding: 0 10px;
+
     /* Text ko ek line mein rakhne ke liye */
 }
 
@@ -757,11 +762,17 @@ h1 {
 
     width: 100%;
     min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+        gap: 20px;
+
 }
 
 .contact-image {
-    flex: 1;
+    
     min-width: 300px;
+    flex: 1 1 50%;
 }
 
 .contact-image img {
@@ -771,10 +782,11 @@ h1 {
 }
 
 .contact-grid {
-    flex: 1;
+    flex: 1 1 50%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-width: 300px;
+    grid-template-columns: 1fr;
 }
 
 /* Info Boxes Common Styles */
