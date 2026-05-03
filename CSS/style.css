@@ -299,13 +299,17 @@ button {
 @media(max-width:768px) {
 
     .left,
-    .right {
+     {
         width: 100%;
         float: none;
     }
-
+    .right{
+ grid-template-columns: 1fr;
+        gap: 15px;
+    }
     .box {
         width: 100%;
+        padding:12px 15px;
     }
 }
 
