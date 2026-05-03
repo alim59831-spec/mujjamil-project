@@ -264,7 +264,7 @@ nav ul li a:hover {
 
     width: 100%;
     min-height:100vh;
-    background-:#000;
+    background: linear-gradient(120deg, #0c3b53, #092634);
     color: #fff;
     padding: 0px 0;
 }
@@ -300,8 +300,8 @@ nav ul li a:hover {
 }
 
 button {
-    background: white;
-    color: black;
+    background: #000;
+    color: #fff;
     border: none;
     padding: 12px 25px;
     cursor: pointer;
